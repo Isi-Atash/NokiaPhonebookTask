@@ -68,8 +68,8 @@ public class PhonebookHashMap {
         subscriberToPhoneNumbers.remove(subscriber);
     }
 
-
-    //Provide search by phone number function (returns a string or throws an exception).
+    // Provide search by phone number function (returns a string or throws an
+    // exception).
     public String searchEntryByPhoneNumber(String phoneNumber) throws Exception {
         if (!isPhoneNumberExists(phoneNumber)) {
             throw new Exception("Phone number does not exist");
@@ -78,7 +78,7 @@ public class PhonebookHashMap {
         return phoneNumberToSubscriber.get(phoneNumber);
     }
 
-    //Provide search by subscriber function (returns a list of phone numbers).
+    // Provide search by subscriber function (returns a list of phone numbers).
     public ArrayList<String> searchEntryBySubscriber(String subscriber) throws Exception {
         if (!isSubscriberExists(subscriber)) {
             throw new Exception("Subscriber does not exist");
